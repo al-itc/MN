@@ -7,6 +7,13 @@
 	 Filename:     	Remediate-Bitlocker-Startup-Pin.ps1
 	 Version:       1.0.0.1
 	===========================================================================
+	===========================================================================
+	 Edited on:   	2024-06-18
+	 Edited by:   	Andreas Landry
+	 Organization: 	MN
+	 Filename:     	Remediate-Bitlocker-Startup-Pin.ps1
+	 Version:       1.0
+	===========================================================================
 	.DESCRIPTION
 		Use this script in Proactive Remediation to download the tool from an Azure Storage account
 	.WARRANTY
@@ -33,9 +40,10 @@ Write-Log -Log "Remediation script started"
 Try
 {
 	# Declare variables
-	$DownloadURL = "YourSASURL"
+	$DownloadURL = "https://github.com/al-itc/MN/raw/main/BitlockerPIN/Bitlocker-Startup-Pin-Tool.zip"
 	$ZIP_File = "C:\Windows\temp\Bitlocker-Startup-Pin-Tool.zip" # ZIP-file download location
-	$ExtractedFolder = 'C:\Windows\Temp\Bitlocker-Startup-Pin-Tool' # Location to the extraced ZIP-file
+	# $ExtractedFolder = 'C:\Windows\Temp\Bitlocker-Startup-Pin-Tool' # Location to the extraced ZIP-file
+	$ExtractedFolder = 'C:\Program Files\Bitlocker-Startup-Pin-Tool' # Location to the extraced ZIP-file
 	
 	# Download the .ZIP-file from storeage account
 	Invoke-WebRequest -Uri $DownloadURL -OutFile $ZIP_File

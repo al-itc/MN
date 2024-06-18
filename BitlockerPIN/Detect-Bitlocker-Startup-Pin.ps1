@@ -7,6 +7,13 @@
 	 Filename:     	Detect-Bitlocker-Startup-Pin.ps1
 	 Version:       1.0.0.1
 	===========================================================================
+	===========================================================================
+	 Edited on:   	2024-06-18
+	 Edited by:   	Andreas Landry
+	 Organization: 	MN
+	 Filename:     	Detect-Bitlocker-Startup-Pin.ps1
+	 Version:       1.0
+	===========================================================================
 	.DESCRIPTION
 		Use this script in Proactive Remediation to detect wether a Bitlocker startup pin has been set to the device or not.
 	.WARRANTY
