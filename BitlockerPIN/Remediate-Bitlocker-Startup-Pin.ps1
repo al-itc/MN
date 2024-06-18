@@ -42,9 +42,8 @@ Try
 	# Declare variables
 	$DownloadURL = "https://github.com/al-itc/MN/raw/main/BitlockerPIN/Bitlocker-Startup-Pin-Tool.zip"
 	$ZIP_File = "C:\Windows\temp\Bitlocker-Startup-Pin-Tool.zip" # ZIP-file download location
-	# $ExtractedFolder = 'C:\Windows\Temp\Bitlocker-Startup-Pin-Tool' # Location to the extraced ZIP-file
-	$ExtractedFolder = 'C:\Program Files\Bitlocker-Startup-Pin-Tool' # Location to the extraced ZIP-file
-	
+	$ExtractedFolder = 'C:\Windows\Temp\Bitlocker-Startup-Pin-Tool' # Location to the extraced ZIP-file
+		
 	# Download the .ZIP-file from storeage account
 	Invoke-WebRequest -Uri $DownloadURL -OutFile $ZIP_File
 	
